@@ -85,11 +85,13 @@
 }
 
 #novel(
-  [Cierro Mis Ojos],
+  [Mala Legua],
   [Eusebio Manguera],
   (
-    [Cierro mis ojos para que tú no sientas ningún miedo],
-    [Cierro mis ojos para escuchar tu voz diciendo "amor"],
+    [Mala hierba nunca muere],
+    [Mala hiedra nunca hiere],
+    [Mala madre siempre tiene],
+    [Mala lengua]
   ),
   (
     include "cap01.typ",
