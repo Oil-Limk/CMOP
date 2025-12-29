@@ -50,7 +50,7 @@
 #let chapter(title, verses, doc) = {
   align(center, heading(level: 2, title))
 
-  align(center, (emph(
+  align(left, (emph(
     for verse in verses {
       linebreak()
       verse
