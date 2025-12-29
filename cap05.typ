@@ -1,13 +1,13 @@
 #import "config.typ": chapter
 
 #show: doc => chapter(
-  [El Cojo],
+  [Cojo],
   (
-    [Verse 1],
-    [Verse 2],
-    [Verse 3],
+    [Cierro mis ojos para que tú no sientas ningún miedo],
+    [Cierro mis ojos para escuchar tu voz diciendo "amor"],
   ),
   doc
 )
 
 
+...
