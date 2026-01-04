@@ -11,11 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Compile
-        uses: Jarivanbakel/typst-action@v3
+        uses: ammar-ahmed22/compile-typst-action@v1
         with:
-          input_files: main.typ
+          source_paths: 'main.typ'
+          output_paths: 'malalengua.pdf'
+          fonts_path: ''
       - name: Upload
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           name: PDF
-          path: malalengua.pdf
+          path: '**/*.pdf'
