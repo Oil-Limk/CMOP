@@ -91,17 +91,11 @@
     [Mala hierba nunca muere],
     [Mala hiedra nunca hiere],
     [Mala madre nunca tiene],
-    [Mala lengua]
+    [Mala lengua],
   ),
   (
     include "cap01.typ",
-    //include "cap02.typ",
-    //include "cap03.typ",
-    //include "cap04.typ",
     include "cap05.typ",
-    //include "cap06.typ",
     include "cap07.typ",
-    //include "cap08.typ",
-    //include "cap09.typ",
   ),
 )
