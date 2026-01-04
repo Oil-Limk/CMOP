@@ -1,26 +1,16 @@
-name: Compile and Commit Typst Files
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
+name: Build Typst document
+on: [push]
 jobs:
-  build:
+  build_typst:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-      - name: Setup Typst
-        uses: typst-community/setup-typst@v4
-      - name: Compile Typst to PDF
-        uses: ammar-ahmed22/compile-typst-action@v1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - uses:  Jarivanbakel/typst-action@v3
         with:
-          source_paths: 'main.typ'
-          output_paths: 'malalengua.pdf'
-      - name: Commit compiled PDFs
-        uses: stefanzweifel/git-auto-commit-action@v5
+          input_files: main.typ
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
         with:
-          commit_message: 'Feat [cd]: Compiled Typst to PDF'
+          name: PDF
+          path: malalengua.pdf
