@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
       - name: Compile Typst to PDF
         uses: ammar-ahmed22/compile-typst-action@v1
         with:
